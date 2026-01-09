@@ -1,0 +1,33 @@
+# ------------------------------------------------------------
+# requirements.txt
+# Forecasting & D&D Analytics Assistant (Production-Ready POC)
+# ------------------------------------------------------------
+
+# ---- Core App ----
+streamlit>=1.32,<2.0
+pandas>=2.0,<3.0
+numpy>=1.24,<2.0
+
+# ---- Databricks SQL (read-only) ----
+databricks-sql-connector>=3.1,<4.0
+
+# ---- Google Sheets (optional, Price Input page) ----
+# Only required if enabling writes to Google Sheets
+google-api-python-client>=2.100,<3.0
+google-auth>=2.22,<3.0
+google-auth-oauthlib>=1.1,<2.0
+
+# ---- Optional: Ask Assistant LLM routing ----
+# Only required if USE_LLM_ROUTER=true
+requests>=2.31,<3.0
+
+# ---- Quality / Stability ----
+python-dateutil>=2.8,<3.0
+pytz>=2023.3
+
+# ------------------------------------------------------------
+# Notes:
+# - App runs WITHOUT Databricks credentials (offline UI mode)
+# - App runs WITHOUT Google Sheets credentials (read-only UI)
+# - OpenAI / LLM usage is OPTIONAL and OFF by default
+# ------------------------------------------------------------

@@ -1,0 +1,94 @@
+# .streamlit/config.toml
+# ------------------------------------------------------------
+# Streamlit Configuration
+# Forecasting & D&D Analytics Assistant (Production-Ready POC)
+# ------------------------------------------------------------
+
+[server]
+# Required for containers / Cloud Run / Databricks Apps
+headless = true
+
+# Do not auto-open a browser in production
+openBrowser = false
+
+# Default Streamlit port (override via platform if needed)
+port = 8501
+
+# Security
+enableCORS = false
+enableXsrfProtection = true
+
+# Large tables / charts can exceed default message size in some deployments
+# (harmless locally; helpful in managed/containerized runtimes)
+maxMessageSize = 200
+
+# Reduce noise from file watching in prod containers
+fileWatcherType = "none"
+
+
+# ------------------------------------------------------------
+# UI Theme (Clean, Professional, Buyer-Friendly)
+# ------------------------------------------------------------
+[theme]
+base = "light"
+
+# Enterprise-style blue
+primaryColor = "#0F62FE"
+
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#F4F7FB"
+textColor = "#161616"
+
+font = "sans serif"
+
+
+# ------------------------------------------------------------
+# Client Behavior
+# ------------------------------------------------------------
+[client]
+# Hide stack traces from end users
+showErrorDetails = false
+
+# Enable caching for performance
+caching = true
+
+
+# ------------------------------------------------------------
+# Browser
+# ------------------------------------------------------------
+[browser]
+# Disable Streamlit telemetry
+gatherUsageStats = false
+
+
+# ------------------------------------------------------------
+# Performance / Runner
+# ------------------------------------------------------------
+[runner]
+# Faster reruns without full teardown
+fastReruns = true
+
+
+# ------------------------------------------------------------
+# Logging
+# ------------------------------------------------------------
+[logger]
+# info is ideal for POC → prod transition
+level = "info"
+
+
+# ------------------------------------------------------------
+# Global Options
+# ------------------------------------------------------------
+[global]
+# Suppress noisy warnings in prod
+disableWatchdogWarning = true
+
+
+# ------------------------------------------------------------
+# Deprecations / Forward-compat
+# ------------------------------------------------------------
+[deprecation]
+# Streamlit has been deprecating some legacy behaviors; keep the UI clean
+showfileUploaderEncoding = false
+showPyplotGlobalUse = false
