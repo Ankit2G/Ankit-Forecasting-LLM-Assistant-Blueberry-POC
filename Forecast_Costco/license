@@ -1,1 +1,362 @@
+COSTCO WHOLESALE CORPORATION
+PROPRIETARY SOFTWARE LICENSE AGREEMENT
+
+Copyright (c) 2025 Costco Wholesale Corporation. All Rights Reserved.
+
+SOFTWARE: Forecasting & D&D Analytics Assistant
+         Production-Ready Proof of Concept (POC)
+
+============================================================================
+                          LICENSE TERMS
+============================================================================
+
+1. GRANT OF LICENSE
+
+   This software, including all source code, documentation, configuration
+   files, SQL queries, Streamlit application code, dashboards, analytics
+   logic, assistant logic, and associated materials (collectively, the
+   "Software"), is the exclusive proprietary property of Costco Wholesale
+   Corporation ("Costco"). A limited, non-exclusive, non-transferable,
+   non-sublicensable, revocable license is granted solely to authorized
+   employees, contractors, and agents of Costco ("Authorized Users") for
+   internal business purposes only.
+
+2. RESTRICTIONS
+
+   Unless expressly authorized in writing by Costco, no person or entity may:
+
+   a. Copy, reproduce, distribute, publish, or disseminate the Software
+      or any portion thereof, in any form or by any means;
+
+   b. Modify, adapt, translate, reverse engineer, decompile, disassemble,
+      or create derivative works based on the Software;
+
+   c. Sublicense, lease, rent, loan, sell, resell, or otherwise transfer
+      the Software or any rights therein to any third party;
+
+   d. Use the Software for any purpose other than authorized Costco
+      internal business operations;
+
+   e. Remove, alter, or obscure any proprietary notices, labels, or
+      markings on the Software;
+
+   f. Use the Software to provide services to, or for the benefit of,
+      any third party, including but not limited to consulting, hosting,
+      managed services, or software-as-a-service offerings;
+
+   g. Upload, post, or make the Software available on any public or
+      third-party repository, website, file-sharing service, or
+      distribution platform;
+
+   h. Use the Software in any manner that competes with Costco's
+      business interests;
+
+   i. Train, fine-tune, or otherwise use the Software, its source code,
+      its logic, or its outputs as input to any machine learning model,
+      large language model, artificial intelligence system, or automated
+      learning system, whether owned by Costco or any third party,
+      without express written authorization;
+
+   j. Use the Software's analytics logic, query patterns, deterministic
+      calculation methods, or assistant routing logic as a template,
+      reference, or basis for building competing or analogous systems
+      for any entity other than Costco.
+
+3. INTELLECTUAL PROPERTY
+
+   All right, title, and interest in and to the Software, including but
+   not limited to all patents, copyrights, trade secrets, trademarks,
+   and other intellectual property rights, are and shall remain the
+   exclusive property of Costco Wholesale Corporation. This includes
+   but is not limited to:
+
+   a. All forecasting dashboard designs, layouts, and user interface
+      elements;
+
+   b. All deterministic analytics logic, calculation methods, and
+      query structures used within the guided analytics assistant;
+
+   c. All intent routing logic, guardrail configurations, and safety
+      mechanisms governing AI behavior within the Software;
+
+   d. All SQL queries, data transformation logic, and aggregation
+      methods embedded in or used by the Software;
+
+   e. All Dump & Destroy (D&D) monitoring logic, ranking algorithms,
+      and financial impact calculations;
+
+   f. All model performance evaluation methods, including but not
+      limited to WAPE, bias, absolute error, and percent error
+      calculations as implemented in the Software;
+
+   g. All depot-item mapping logic, warehouse grouping logic, and
+      organizational hierarchies embedded in the Software;
+
+   h. All configuration files, environment variable schemas,
+      deployment scripts, and service architecture definitions.
+
+   Nothing in this license shall be construed as granting any ownership
+   rights to any party other than Costco.
+
+4. CONFIDENTIALITY
+
+   The Software constitutes confidential and proprietary information of
+   Costco. Authorized Users shall:
+
+   a. Maintain the Software in strict confidence;
+
+   b. Not disclose the Software or any information derived therefrom to
+      any unauthorized person or entity;
+
+   c. Apply no less than the same degree of care to protect the
+      confidentiality of the Software as they apply to their own
+      confidential information, but in no event less than reasonable
+      care;
+
+   d. Immediately notify Costco of any unauthorized access, use, or
+      disclosure of the Software;
+
+   e. Not disclose, discuss, or share any business logic, forecasting
+      methodologies, demand planning strategies, D&D thresholds, or
+      operational metrics revealed through the use of the Software
+      with any unauthorized person or entity;
+
+   f. Not capture, record, screenshot, or otherwise reproduce any
+      data, analytics outputs, forecast values, or performance
+      metrics displayed by the Software for distribution outside of
+      authorized Costco business channels.
+
+5. DATA AND SECURITY
+
+   The Software is designed to interface with Costco's proprietary data
+   systems, including but not limited to Databricks environments, Delta
+   tables, Databricks SQL Warehouses, and internal forecasting and
+   analytics pipelines. All data accessed, processed, or displayed by
+   the Software is the exclusive property of Costco and is subject to
+   Costco's data governance policies.
+
+   a. No data accessed through the Software may be exported, copied, or
+      transmitted outside of Costco's authorized systems without express
+      written approval;
+
+   b. All access credentials, connection strings, API keys, Databricks
+      tokens, service account credentials, and environment variables
+      used by the Software are confidential and must be stored and
+      managed in accordance with Costco's information security policies;
+
+   c. The Software operates in a read-only capacity against Costco's
+      data systems. Any attempt to modify, write to, or alter the
+      underlying data sources through the Software or through
+      modification of the Software is strictly prohibited;
+
+   d. All data displayed by the Software, including but not limited to
+      historical sales volumes, weekly forecasts, backtesting results,
+      D&D quantities, D&D financial impacts, and depot-level metrics,
+      is proprietary Costco business data and is subject to the
+      confidentiality obligations set forth in Section 4;
+
+   e. The Software enforces row limits and query controls on all data
+      access. Any attempt to circumvent, disable, or modify these
+      controls is strictly prohibited;
+
+   f. Any data exports generated by the Software (including but not
+      limited to CSV downloads and exportable table views) are subject
+      to the same confidentiality and data governance requirements as
+      the source data and may only be used for authorized Costco
+      internal business purposes.
+
+6. AI AND ANALYTICS CONTROLS
+
+   The Software contains an optional AI-assisted analytics component
+   (the "Assistant") that is subject to the following additional terms:
+
+   a. The Assistant is designed to operate deterministically. All
+      numerical outputs, calculations, and analytics results are
+      computed directly from stored data in Costco's Databricks
+      tables. The Assistant does not generate, estimate, approximate,
+      or hallucinate numerical values;
+
+   b. When AI capabilities are enabled, AI is used solely for intent
+      routing (interpreting user questions to select the appropriate
+      pre-built deterministic query). AI does not generate SQL, does
+      not perform calculations, and does not produce forecasts;
+
+   c. AI capabilities may be disabled entirely via a single
+      configuration flag. When disabled, the Assistant operates
+      exclusively through deterministic, rule-based routing;
+
+   d. No user query, input, or interaction with the Assistant may be
+      transmitted to any external AI service, API, or third-party
+      system without express written authorization from Costco and
+      in compliance with Costco's data governance and privacy policies;
+
+   e. The Assistant's guardrails, safety mechanisms, and scope
+      limitations must not be modified, bypassed, or disabled without
+      express written authorization from Costco;
+
+   f. The Assistant does not generate forecasts, does not modify
+      model logic, and does not write to any data source. Any
+      modification of the Software that would alter these constraints
+      is strictly prohibited.
+
+7. DEPLOYMENT AND INFRASTRUCTURE
+
+   The Software is designed for deployment on Google Cloud Platform
+   (GCP) Cloud Run or equivalent authorized Costco infrastructure.
+
+   a. The Software may only be deployed on infrastructure authorized
+      and approved by Costco's IT and security teams;
+
+   b. All deployment configurations, Dockerfiles, service definitions,
+      and infrastructure-as-code files included in the Software are
+      proprietary and subject to all restrictions set forth herein;
+
+   c. The Software must not be deployed in any environment that is
+      accessible to unauthorized users or to the public internet
+      without appropriate authentication and authorization controls
+      approved by Costco;
+
+   d. Any cloud resources, compute instances, or services provisioned
+      for the operation of the Software must comply with Costco's
+      cloud governance and cost management policies.
+
+8. SCOPE OF SOFTWARE FUNCTIONALITY
+
+   For the avoidance of doubt, the Software is designed and authorized
+   to perform the following functions only:
+
+   a. Display weekly demand forecast outputs generated by upstream
+      Databricks pipelines;
+
+   b. Provide drill-down forecast exploration by run date, depot,
+      item, and forecast horizon;
+
+   c. Display model backtesting and performance metrics including
+      WAPE, bias, absolute error, and percent error;
+
+   d. Monitor and display Dump & Destroy (D&D) trends, rates,
+      quantities, and financial impacts at company and depot levels;
+
+   e. Provide a guided analytics assistant that answers user questions
+      using deterministic, auditable calculations;
+
+   f. Enable export of analytics views for authorized offline review.
+
+   Any modification of the Software to perform functions beyond those
+   enumerated above, including but not limited to forecast generation,
+   model training, data modification, or write operations, is strictly
+   prohibited without express written authorization from Costco.
+
+9. NO WARRANTY
+
+   THE SOFTWARE IS PROVIDED "AS IS" AND "AS AVAILABLE," WITHOUT
+   WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED
+   TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR
+   PURPOSE, ACCURACY, COMPLETENESS, AND NONINFRINGEMENT. COSTCO DOES
+   NOT WARRANT THAT THE SOFTWARE WILL BE ERROR-FREE, UNINTERRUPTED,
+   OR FREE OF HARMFUL COMPONENTS.
+
+   WITHOUT LIMITING THE FOREGOING, COSTCO MAKES NO WARRANTY OR
+   REPRESENTATION REGARDING THE ACCURACY OF ANY FORECAST, ANALYTICS
+   OUTPUT, PERFORMANCE METRIC, OR D&D CALCULATION DISPLAYED BY THE
+   SOFTWARE. ALL SUCH OUTPUTS ARE DERIVED FROM UPSTREAM DATA PIPELINES
+   AND ARE PRESENTED FOR INFORMATIONAL AND DECISION-SUPPORT PURPOSES
+   ONLY.
+
+10. LIMITATION OF LIABILITY
+
+    IN NO EVENT SHALL COSTCO, ITS OFFICERS, DIRECTORS, EMPLOYEES,
+    AGENTS, OR AFFILIATES BE LIABLE FOR ANY INDIRECT, INCIDENTAL,
+    SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, INCLUDING BUT NOT
+    LIMITED TO LOSS OF PROFITS, DATA, BUSINESS OPPORTUNITY, OR
+    GOODWILL, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+    INABILITY TO USE THE SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY
+    OF SUCH DAMAGES.
+
+    WITHOUT LIMITING THE FOREGOING, COSTCO SHALL NOT BE LIABLE FOR ANY
+    BUSINESS DECISIONS MADE IN RELIANCE ON FORECASTS, ANALYTICS,
+    PERFORMANCE METRICS, OR D&D DATA DISPLAYED BY THE SOFTWARE. USERS
+    ARE RESPONSIBLE FOR EXERCISING INDEPENDENT JUDGMENT IN ALL
+    PURCHASING, ORDERING, AND OPERATIONAL DECISIONS.
+
+11. TERMINATION
+
+    This license is effective until terminated. Costco may terminate
+    this license at any time, for any reason, with or without notice.
+    Upon termination:
+
+    a. All rights granted herein shall immediately cease;
+
+    b. Authorized Users must immediately cease all use of the Software;
+
+    c. All copies of the Software in any form must be promptly
+       destroyed or returned to Costco;
+
+    d. All access credentials, tokens, and environment variables
+       associated with the Software must be revoked or destroyed;
+
+    e. Sections 2, 3, 4, 5, 6, 7, 8, 9, 10, and 13 shall survive
+       termination.
+
+12. AUDIT RIGHTS
+
+    Costco reserves the right to audit the use of the Software at any
+    time to ensure compliance with the terms of this license. Authorized
+    Users agree to cooperate fully with any such audit and to provide
+    access to any systems, logs, or records reasonably necessary to
+    verify compliance.
+
+13. GOVERNING LAW AND JURISDICTION
+
+    This license shall be governed by and construed in accordance with
+    the laws of the State of Washington, United States of America,
+    without regard to its conflict of laws principles. Any disputes
+    arising under or in connection with this license shall be subject
+    to the exclusive jurisdiction of the state and federal courts
+    located in King County, Washington.
+
+14. SEVERABILITY
+
+    If any provision of this license is held to be invalid, illegal, or
+    unenforceable, the remaining provisions shall continue in full force
+    and effect. The invalid, illegal, or unenforceable provision shall
+    be modified to the minimum extent necessary to make it valid, legal,
+    and enforceable while preserving its original intent.
+
+15. NO WAIVER
+
+    The failure of Costco to enforce any provision of this license shall
+    not constitute a waiver of such provision or the right to enforce it
+    at a later time. No waiver of any provision shall be effective unless
+    made in writing and signed by an authorized representative of Costco.
+
+16. ENTIRE AGREEMENT
+
+    This license constitutes the entire agreement between the parties
+    with respect to the Software and supersedes all prior or
+    contemporaneous understandings, agreements, representations, and
+    warranties, whether written or oral, regarding the Software.
+
+17. AMENDMENTS
+
+    Costco reserves the right to modify the terms of this license at
+    any time. Continued use of the Software following any such
+    modification constitutes acceptance of the revised terms.
+
+18. CONTACT
+
+    For questions regarding this license or to request authorization
+    for any use not expressly permitted herein, contact:
+
+    Costco Wholesale Corporation
+    Legal Department
+    999 Lake Drive
+    Issaquah, WA 98027
+    United States
+
+============================================================================
+         UNAUTHORIZED USE, REPRODUCTION, OR DISTRIBUTION OF THIS
+         SOFTWARE IS STRICTLY PROHIBITED AND MAY RESULT IN SEVERE
+         CIVIL AND CRIMINAL PENALTIES.
+============================================================================
 
